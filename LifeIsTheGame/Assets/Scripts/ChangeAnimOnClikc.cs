@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class ChangeAnimOnClikc : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] Animator charAnim_;
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeState(string trigger)
     {
+        charAnim_.SetTrigger(trigger);
         
     }
 }
