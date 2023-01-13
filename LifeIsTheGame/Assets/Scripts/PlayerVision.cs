@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerVision : MonoBehaviour
 {
-    [SerializeField] Camera cam_;
+    public Camera cam_;
     private float xRotation = 0f;
     [SerializeField] float xSensitivity, ySensitivity;
    public void ProcessLook(Vector2 input)
