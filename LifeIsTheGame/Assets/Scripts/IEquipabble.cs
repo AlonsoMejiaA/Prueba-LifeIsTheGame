@@ -4,6 +4,5 @@ using UnityEngine;
 
 public interface IEquipabble 
 {
-    
-    void TestText(string text);
+    void Equip();
 }

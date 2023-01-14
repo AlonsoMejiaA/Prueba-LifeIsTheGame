@@ -26,9 +26,10 @@ public class PlayerInteraction : MonoBehaviour
             IEquipabble equipable = hitInfo.collider.GetComponent<IEquipabble>();
             if (equipable != null)
             {
-                if (manager)
+                if (manager.onFoot.Equip.triggered)
                 {
-
+                    Debug.Log("buenas");
+                    equipable.Equip();
                 }
             }
         }
