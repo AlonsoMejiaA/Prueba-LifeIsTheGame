@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class KnockBlast : MonoBehaviour
 {
-    [SerializeField] float xForce, yForce, zForce;
+    [SerializeField] float exForce,exRad;
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<Rigidbody>() && other.CompareTag("Object"))
         {
-            other.attachedRigidbody.AddForce(new Vector3(xForce, yForce, zForce));
+            other.attachedRigidbody.AddExplosionForce(exForce, transform.position, exRad);
         }
     }
 }
