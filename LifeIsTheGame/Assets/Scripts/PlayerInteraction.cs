@@ -8,6 +8,8 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField]LayerMask mask;
     [SerializeField] float distance = 2f;
     private InputManager manager;
+    private WeaponEquipped weapon;
+    public bool isEquiped;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,12 +28,19 @@ public class PlayerInteraction : MonoBehaviour
             IEquipabble equipable = hitInfo.collider.GetComponent<IEquipabble>();
             if (equipable != null)
             {
-                if (manager.onFoot.Equip.triggered)
+                if (manager.onFoot.Equip.triggered && !isEquiped)
                 {
                     Debug.Log("buenas");
                     equipable.Equip();
+                    isEquiped = true;
+                    weapon = hitInfo.collider.GetComponent<WeaponEquipped>();
                 }
             }
+        }
+        if (isEquiped && manager.onFoot.UnEquip.triggered)
+        {
+            weapon.UnEquip();
+            isEquiped = false;
         }
         
     }

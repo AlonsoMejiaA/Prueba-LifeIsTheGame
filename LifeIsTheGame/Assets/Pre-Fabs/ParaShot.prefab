@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1767404808429323414}
   - component: {fileID: 1767404808429323413}
   - component: {fileID: 1767404808429323412}
+  - component: {fileID: 8966807552080132688}
   m_Layer: 0
   m_Name: ParaShot
   m_TagString: Untagged
@@ -112,3 +113,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8966807552080132688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767404808429323411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11f126d6a3c9b5429fd4bfab6856fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun_: {fileID: 11400000, guid: 5c8a8a8f42e5c8348ae2bcf6fe9e6daa, type: 2}
+  place_: {fileID: 0}
+  weaponTag: Weapon1

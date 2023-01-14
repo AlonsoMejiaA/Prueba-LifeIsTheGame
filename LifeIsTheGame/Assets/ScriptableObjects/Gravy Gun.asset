@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gravy Gun
   m_EditorClassIdentifier: 
   maxAmmo: 18
-  ammoType: {fileID: 5863261129541288153, guid: ffb0fdf09cb543245b1fb377b03414fd, type: 3}
-  xSpeed: 1
-  ySpeed: 0
+  extraSpeedX: 0
+  extraSpeedY: 0
+  extraSpeedZ: 0
   actualAmmo: 18

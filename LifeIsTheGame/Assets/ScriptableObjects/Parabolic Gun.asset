@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Parabolic Gun
   m_EditorClassIdentifier: 
   maxAmmo: 30
-  ammoType: {fileID: 1767404808429323411, guid: 98ca129a7418805499fe81d9a0f88fa0, type: 3}
-  xSpeed: 10
-  ySpeed: 10
+  extraSpeedX: 400
+  extraSpeedY: 400
+  extraSpeedZ: 400
   actualAmmo: 30

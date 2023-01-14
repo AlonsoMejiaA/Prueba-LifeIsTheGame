@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Knock Gun
   m_EditorClassIdentifier: 
   maxAmmo: 10
-  ammoType: {fileID: 7813532082626032808, guid: a0de71ac8d4b23244a9dde295560aede, type: 3}
-  xSpeed: 3
-  ySpeed: 0
+  extraSpeedX: 0
+  extraSpeedY: 0
+  extraSpeedZ: 0
   actualAmmo: 10
