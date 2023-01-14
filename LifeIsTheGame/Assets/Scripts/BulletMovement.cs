@@ -9,7 +9,19 @@ public class BulletMovement : MonoBehaviour,IO
     [SerializeField] string weaponTag;
     [SerializeField] float horizontalSpeed;
     private float myExtraSpeedX,myExtraSpeedY,myExtraSpeedZ;
-   
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Level") || other.CompareTag("Enemy") || other.CompareTag("Object"))
+        {
+            this.gameObject.SetActive(false);
+            if (this.transform.parent != null)
+            {
+                this.transform.parent.gameObject.SetActive(false);
+            }
+        }
+        
+    }
+
     public void OnObjectSpawned()
     {
         place_ = GameObject.FindGameObjectWithTag(weaponTag);

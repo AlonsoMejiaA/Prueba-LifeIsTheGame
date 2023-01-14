@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 498806371528657735}
   - component: {fileID: 6582687576886178696}
   - component: {fileID: 1822097064258270013}
+  - component: {fileID: 1380321665381011026}
   m_Layer: 0
   m_Name: Knocking shot
   m_TagString: Untagged
@@ -128,3 +129,19 @@ MonoBehaviour:
   xForce: 4
   yForce: 4
   zForce: 4
+--- !u!114 &1380321665381011026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7813532082626032808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11f126d6a3c9b5429fd4bfab6856fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun_: {fileID: 11400000, guid: 21901388648bdfd4299b2d0df0e70551, type: 2}
+  place_: {fileID: 0}
+  weaponTag: Weapon2
+  horizontalSpeed: 5

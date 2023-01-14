@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 394712307}
   m_Layer: 0
   m_Name: Place Holder Cube (7)
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 510310907}
   m_Layer: 0
   m_Name: Place Holder Cube (4)
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -842,6 +842,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!4 &732022466 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 808d8bedf2d978e47a4a056a0c33f3d9, type: 3}
+  m_PrefabInstance: {fileID: 851945709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &732022467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,6 +860,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeToEquip_: {fileID: 1560481572}
+--- !u!114 &732022468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732022461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3fe229b25c9e4741899314033b9523c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun_: {fileID: 11400000, guid: 21901388648bdfd4299b2d0df0e70551, type: 2}
+  player_: {fileID: 5502637264783576889}
+  placeToSpawnShot_: {fileID: 2114120196}
+  imEquiped: 0
+  tagForPool: Knock
 --- !u!1 &782360141 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 5f9b176058917ba49a8059f6da098866, type: 3}
@@ -923,6 +945,7 @@ MonoBehaviour:
   gun_: {fileID: 11400000, guid: 5c8a8a8f42e5c8348ae2bcf6fe9e6daa, type: 2}
   player_: {fileID: 5502637264783576889}
   placeToSpawnShot_: {fileID: 1895809736}
+  imEquiped: 0
   tagForPool: Para
 --- !u!1001 &851945709
 PrefabInstance:
@@ -1032,6 +1055,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!4 &894908674 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: c65eeed0e623d84468374b51a0d355da, type: 3}
+  m_PrefabInstance: {fileID: 1978969676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &894908675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1045,6 +1073,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeToEquip_: {fileID: 1474210132}
+--- !u!114 &894908676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894908669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3fe229b25c9e4741899314033b9523c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun_: {fileID: 11400000, guid: 12d7271fb0cd9c347b69472fc528622b, type: 2}
+  player_: {fileID: 5502637264783576889}
+  placeToSpawnShot_: {fileID: 1093127917}
+  imEquiped: 0
+  tagForPool: Gravy
 --- !u!1 &955502066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,7 +1517,7 @@ GameObject:
   - component: {fileID: 1012455701}
   m_Layer: 0
   m_Name: Place Holder Cube (3)
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1553,6 +1598,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012455699}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1093127916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093127917}
+  m_Layer: 8
+  m_Name: Place for shots3
+  m_TagString: Weapon3
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1093127917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093127916}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.3609, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 894908674}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1094439037
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,7 +1813,7 @@ GameObject:
   - component: {fileID: 1350986977}
   m_Layer: 0
   m_Name: Place Holder Cube (1)
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1834,7 +1909,7 @@ GameObject:
   - component: {fileID: 1398864569}
   m_Layer: 8
   m_Name: Place Holder Cube (6)
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2104,7 +2179,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1474210132}
-  - component: {fileID: 1474210133}
   m_Layer: 0
   m_Name: PlaceForbigWeapon
   m_TagString: Untagged
@@ -2126,19 +2200,6 @@ Transform:
   m_Father: {fileID: 208248422}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!65 &1474210133
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1474210131}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: -0.18277586, z: 0.25948265}
 --- !u!143 &1548755942
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2197,7 +2258,7 @@ GameObject:
   - component: {fileID: 1550669174}
   m_Layer: 0
   m_Name: Place Holder Cube (5)
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2287,7 +2348,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1560481572}
-  - component: {fileID: 1560481573}
   m_Layer: 0
   m_Name: PlaceForMedium
   m_TagString: Untagged
@@ -2309,19 +2369,6 @@ Transform:
   m_Father: {fileID: 208248422}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -99.315, z: 90}
---- !u!65 &1560481573
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560481571}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: -0.18277586, z: 0.25948265}
 --- !u!1 &1601872640
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,7 +2409,7 @@ BoxCollider:
   m_GameObject: {fileID: 1601872640}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: -0.18277586, z: 0.25948265}
@@ -2377,7 +2424,7 @@ GameObject:
   - component: {fileID: 1703846843}
   m_Layer: 0
   m_Name: '[Level]'
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2420,7 +2467,7 @@ GameObject:
   - component: {fileID: 1733792176}
   m_Layer: 0
   m_Name: Place Holder Cube (2)
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2617,7 +2664,7 @@ GameObject:
   - component: {fileID: 1843216292}
   m_Layer: 0
   m_Name: Place Holder Cube
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2707,7 +2754,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1895809736}
-  - component: {fileID: 1895809737}
   - component: {fileID: 1895809738}
   m_Layer: 8
   m_Name: Place for shots
@@ -2730,19 +2776,6 @@ Transform:
   m_Father: {fileID: 782360146}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!135 &1895809737
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1895809735}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.03
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1895809738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2915,7 +2948,7 @@ GameObject:
   - component: {fileID: 2030895311}
   m_Layer: 0
   m_Name: Place Holder Cube (8)
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2996,6 +3029,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030895309}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2114120195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2114120196}
+  m_Layer: 8
+  m_Name: place for shots2
+  m_TagString: Weapon2
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2114120196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114120195}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.282, z: -0.003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 732022466}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &79792718662381529
 GameObject:
   m_ObjectHideFlags: 0

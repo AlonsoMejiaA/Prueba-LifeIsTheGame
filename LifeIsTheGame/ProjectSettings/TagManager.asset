@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Weapon1
+  - Weapon2
+  - Weapon3
+  - Level
+  - Enemy
+  - Object
   layers:
   - Default
   - TransparentFX

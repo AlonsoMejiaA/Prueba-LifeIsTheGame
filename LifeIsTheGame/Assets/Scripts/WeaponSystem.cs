@@ -10,7 +10,7 @@ public class WeaponSystem : MonoBehaviour
     [SerializeField] PlayerInteraction player_;
     [SerializeField] Transform placeToSpawnShot_;
     private int myMaxAmmo,myActualAmmo;
-    
+    public bool imEquiped;
     [SerializeField] string tagForPool;
     GameObject[] bullets;
     void Start()
@@ -25,9 +25,15 @@ public class WeaponSystem : MonoBehaviour
 
     void Update()
     {
-        if (manager.onFoot.Shoot.triggered && player_.isEquiped)
+        if (manager.onFoot.Shoot.triggered && player_.isEquiped && myActualAmmo > 0 && imEquiped)
         {
             Fire();
+            myActualAmmo--;
+        }
+        if (manager.onFoot.Reload.triggered && imEquiped)
+        {
+            gun_.Reload();
+            myActualAmmo = gun_.maxAmmo;
         }
     }
     private void Fire()
