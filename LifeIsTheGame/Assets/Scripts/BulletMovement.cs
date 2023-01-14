@@ -7,6 +7,7 @@ public class BulletMovement : MonoBehaviour,IO
     [SerializeField] Guns gun_;
     [SerializeField] GameObject place_;
     [SerializeField] string weaponTag;
+    [SerializeField] float horizontalSpeed;
     private float myExtraSpeedX,myExtraSpeedY,myExtraSpeedZ;
    
     public void OnObjectSpawned()
@@ -16,6 +17,6 @@ public class BulletMovement : MonoBehaviour,IO
         myExtraSpeedY = gun_.extraSpeedY;
         myExtraSpeedZ = gun_.extraSpeedZ;
         Vector3 Force = new Vector3(myExtraSpeedX, myExtraSpeedY, myExtraSpeedZ);
-        GetComponent<Rigidbody>().AddForce(place_.transform.forward*10 + Force);
+        GetComponent<Rigidbody>().velocity = (place_.transform.forward*horizontalSpeed) + Force;
     }
 }

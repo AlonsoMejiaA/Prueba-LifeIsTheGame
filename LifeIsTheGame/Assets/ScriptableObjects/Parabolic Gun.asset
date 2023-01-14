@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Parabolic Gun
   m_EditorClassIdentifier: 
   maxAmmo: 30
-  extraSpeedX: 400
-  extraSpeedY: 400
-  extraSpeedZ: 400
+  extraSpeedX: 0
+  extraSpeedY: 10
+  extraSpeedZ: 0
   actualAmmo: 30

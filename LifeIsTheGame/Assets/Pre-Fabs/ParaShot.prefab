@@ -128,3 +128,4 @@ MonoBehaviour:
   gun_: {fileID: 11400000, guid: 5c8a8a8f42e5c8348ae2bcf6fe9e6daa, type: 2}
   place_: {fileID: 0}
   weaponTag: Weapon1
+  horizontalSpeed: 10
