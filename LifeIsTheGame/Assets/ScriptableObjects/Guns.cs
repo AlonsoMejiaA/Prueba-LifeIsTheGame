@@ -6,7 +6,7 @@ using UnityEngine;
 public class Guns : ScriptableObject
 {
     public int maxAmmo;
-
+    public float Damage;
     public float extraSpeedX,extraSpeedY,extraSpeedZ;
     public int actualAmmo;
     public void Reload()

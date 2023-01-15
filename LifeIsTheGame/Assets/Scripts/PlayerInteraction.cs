@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PlayerInteraction : MonoBehaviour
     private InputManager manager;
     private WeaponEquipped weapon;
     public bool isEquiped;
+    [SerializeField] GameObject e;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,7 @@ public class PlayerInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        e.gameObject.SetActive(false);
         Ray ray = new Ray(playerCam.transform.position, playerCam.transform.forward);
         Debug.DrawRay(ray.origin, ray.direction * distance);
         RaycastHit hitInfo;
@@ -28,12 +32,13 @@ public class PlayerInteraction : MonoBehaviour
             IEquipabble equipable = hitInfo.collider.GetComponent<IEquipabble>();
             if (equipable != null)
             {
+                e.gameObject.SetActive(true);
                 if (manager.onFoot.Equip.triggered && !isEquiped)
                 {
-                    Debug.Log("buenas");
                     equipable.Equip();
                     isEquiped = true;
                     weapon = hitInfo.collider.GetComponent<WeaponEquipped>();
+                    
                 }
             }
         }

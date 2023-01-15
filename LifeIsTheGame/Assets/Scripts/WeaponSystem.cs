@@ -5,22 +5,25 @@ using UnityEngine;
 public class WeaponSystem : MonoBehaviour
 {
     [SerializeField] Guns gun_;
+    private AudioSource mySource;
     private InputManager manager;
     private PoolManager poolManager;
     [SerializeField] PlayerInteraction player_;
     [SerializeField] Transform placeToSpawnShot_;
-    private int myMaxAmmo,myActualAmmo;
+    public int myMaxAmmo,myActualAmmo;
     public bool imEquiped;
     [SerializeField] string tagForPool;
+    private AmmoCounter ammoCounter;
     GameObject[] bullets;
     void Start()
     {
+        mySource = GetComponent<AudioSource>();
         bullets = new GameObject[gun_.maxAmmo];
         poolManager = FindObjectOfType<PoolManager>();
         manager = FindObjectOfType<InputManager>();
         myMaxAmmo = gun_.maxAmmo;
         myActualAmmo = gun_.actualAmmo;
-        
+        ammoCounter = GetComponent<AmmoCounter>();
     }
 
     void Update()
@@ -29,6 +32,7 @@ public class WeaponSystem : MonoBehaviour
         {
             Fire();
             myActualAmmo--;
+            ammoCounter.UpdateText();
         }
         if (manager.onFoot.Reload.triggered && imEquiped)
         {
@@ -43,7 +47,7 @@ public class WeaponSystem : MonoBehaviour
             if (bullets[i]== null)
             {
                 GameObject bullet = poolManager.SpawnFromPool(tagForPool, placeToSpawnShot_.position);
-                
+                mySource.PlayOneShot(mySource.clip);
                 bullets[i] = bullet;
                 return;
             }

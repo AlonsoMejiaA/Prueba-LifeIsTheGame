@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Knock Gun
   m_EditorClassIdentifier: 
   maxAmmo: 10
+  Damage: 5
   extraSpeedX: 0
   extraSpeedY: 0
   extraSpeedZ: 0

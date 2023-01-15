@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Gravy Gun
   m_EditorClassIdentifier: 
   maxAmmo: 18
+  Damage: 2
   extraSpeedX: 0
   extraSpeedY: 0
   extraSpeedZ: 0

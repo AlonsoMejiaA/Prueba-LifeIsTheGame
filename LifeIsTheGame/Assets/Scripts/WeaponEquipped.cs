@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class WeaponEquipped : MonoBehaviour, IEquipabble
 {
-    [SerializeField] Transform placeToEquip_;
+    [SerializeField] Transform placeToEquip_,placeToDrop;
     private WeaponSystem me;
+    private AmmoCounter ammo;
     private void Start()
     {
         me = GetComponent<WeaponSystem>();
+        ammo = GetComponent<AmmoCounter>();
     }
 
     public void Equip()
@@ -21,7 +23,9 @@ public class WeaponEquipped : MonoBehaviour, IEquipabble
 
     public void UnEquip()
     {
+        ammo.ClearText();
         me.imEquiped = false;
+        this.transform.position = placeToDrop.position;
         this.transform.parent = null;
     }
 }
